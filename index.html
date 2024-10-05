@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travella Navbar</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <script src="https://cdn.tailwindcss.com"></script>
 
 
@@ -243,20 +247,20 @@
 
       <div class="bg-[#01022B]">
         <div id="Services" class="w-full container mx-auto bg-[#01022B] text-white ">
-            <h1 class="text-center text-5xl py-20">
+            <h1 class="text-center text-5xl py-10 xl:py-20">
                 Digital
                 <span class="stroked-text">Solutions</span>
                 Offered for Greater Effectiveness
             </h1>
 
             <!-- First Section -->
-            <div class="w-full flex flex-col lg:flex-row p-10 py-20">
+            <div class="w-full flex flex-col lg:flex-row p-10 py-10 xl:py-20">
                 <div class="w-full lg:w-1/2 lg:px-28">
                     <img class="w-full h-[60vh]"
                         src="https://plus.unsplash.com/premium_photo-1680089163317-343a2cc0e1b9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="">
                 </div>
-                <div class="w-full lg:w-1/2 flex gap-5 items-start justify-center flex-col lg:p-20">
+                <div class="w-full lg:w-1/2 flex gap-5 items-start justify-center flex-col lg:px-20">
                     <h1 class="text-4xl text-start mt-4">Design Development</h1>
                     <p class="text-xl text-gray-500 text-start">
                         Braktt provides comprehensive design solutions, including brochures, posters, and digital
@@ -278,13 +282,13 @@
             </div>
 
             <!-- Second Section -->
-            <div class="w-full flex flex-col lg:flex-row-reverse p-10 py-20">
+            <div class="w-full flex flex-col lg:flex-row-reverse p-10  xl:py-20">
                 <div class="w-full lg:w-1/2 lg:px-28">
                     <img class="w-full h-[60vh]"
                         src="https://plus.unsplash.com/premium_photo-1680089163317-343a2cc0e1b9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="">
                 </div>
-                <div class="w-full lg:w-1/2 flex gap-5 items-start justify-center flex-col lg:p-20">
+                <div class="w-full lg:w-1/2 flex gap-5 items-start justify-center flex-col lg:px-20">
                     <h1 class="text-4xl text-start mt-4">Dynamic Animation Videos for the Industry</h1>
                     <p class="text-xl text-gray-500 text-start">
                         Braktt creates dynamic animation videos that simplify complex oil and gas concepts for training
@@ -305,7 +309,7 @@
                 </div>
             </div>
 
-            <div class="w-full flex flex-col lg:flex-row p-10 py-20">
+            <div class="w-full flex flex-col lg:flex-row p-10 py-10 xl:py-20">
                 <!-- Image Section -->
                 <div class="w-full lg:w-1/2 lg:px-28">
                     <img class="w-full h-[60vh]"
@@ -314,7 +318,7 @@
                 </div>
 
                 <!-- Text Section -->
-                <div class="w-full lg:w-1/2 flex gap-5 items-start justify-center flex-col lg:p-20">
+                <div class="w-full lg:w-1/2 flex gap-5 items-start justify-center flex-col lg:px-20">
                     <h1 class="text-4xl text-start mt-4">Comprehensive Software Solutions</h1>
                     <p class="text-xl text-gray-500 text-start">
                         Braktt provides comprehensive software solutions, streamlining operations and boosting
@@ -340,20 +344,23 @@
 
         <div class="w-full container mx-auto">
             <div class="w-[80%] mx-auto flex flex-col md:flex-row py-20 items-center justify-center">
-                <div class="w-full md:w-1/2 flex pb-5 items-start flex-col gap-5">
+                <div class="w-full  flex pb-5 items-start flex-col gap-5">
                     <ul class="list-disc list-inside">
                         <li class="text-base">Your Heading</li>
                     </ul>
-                    <h1 class="text-6xl">Get Expert Advice on Digital Solutions</h1>
+                    <div class="w-full flex flex-col md:flex-row  justify-between">
+                        <h1 class="text-6xl">Get Expert Advice on Digital Solutions</h1>
+                    <p class="w-full  text-base">
+                        Edvantage partners with Braktt for comprehensive website management, design services, and video
+                        animation solutions, ensuring innovative execution in the oil and gas sector.
+                    </p>
+                    </div>
                     <button
                         class="w-fit text-white text-xl px-6 py-4 rounded-full bg-gradient-to-r from-blue-800 to-sky-400">
                         Connect us
                     </button>
                 </div>
-                <p class="w-full md:w-1/2 text-base">
-                    Edvantage partners with Braktt for comprehensive website management, design services, and video
-                    animation solutions, ensuring innovative execution in the oil and gas sector.
-                </p>
+                
             </div>
         </div>
 
@@ -619,11 +626,11 @@
 
                 <div id="Edvantagework" class="container mx-auto relative flex flex-col items-center justify-center min-h-screen pt-10 overflow-hidden">
                     <h1 class="text-4xl font-bold pb-10">Our Work</h1>
-                    <div class="relative w-full xl:h-[500px] flex flex-col gap-10 items-center justify-center" id="content">
+                    <div class="relative container mx-auto w-full xl:h-[500px] flex flex-col-reverse gap-10 items-center justify-center" id="content">
                         <div class="relative w-full items-center justify-center gap-10 lg:gap-28 h-full flex transition-all duration-500 ease-in-out">
                             <div class="w-full text-white transition-all ease-in-out xl:h-[400px] lg:w-2/3 flex flex-col gap-10 items-center justify-between duration-500" id="cardContainer">
                                 <div class="card w-full bg-blue-800 rounded-[50px] lg:h-[400px] flex lg:flex-row flex-col mx-auto items-center justify-between pt-16">
-                                    <div class="flex z-[999] lg:-ml-20 lg:mt-20 items-center justify-center h-full px-5 py-10 md:w-full lg:w-1/2">
+                                    <div class="flex z-[999] -mt-20 pb-20 lg:-ml-20 lg:mt-20 items-center justify-center h-full px-5 py-10 md:w-full lg:w-1/2">
                                         <img class="rounded-tl-3xl rounded-br-3xl" id="cardImage" src="https://images.unsplash.com/photo-1714201624064-b5678dc84f5d?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                                     </div>
                                     <div class="absolute top-0 left-0 w-full p-4 text-white"></div>
@@ -640,9 +647,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="absolute flex justify-between w-full mt-5">
-                            <button id="prevBtn" class="bg-gray-200 p-4 rounded-lg">Prev</button>
-                            <button id="nextBtn" class="bg-gray-200 p-4 rounded-lg">Next</button>
+                        <div class="lg:absolute  flex text-xl lg:text-3xl justify-between w-full ">
+                            <button id="prevBtn" class="bg-gray-100 p-4 rounded-lg"><i class="ri-arrow-left-s-line"></i></button>
+                            <button id="nextBtn" class="bg-gray-100 p-4 rounded-lg"><i class="ri-arrow-right-s-line"></i></button>
                         </div>
                         <div class="h-[10vh] opacity-20 xl:block hidden"></div>
                     </div>
@@ -655,7 +662,7 @@
 
         </div>
 
-        <div class="bg-[#01022B]">
+        <!-- <div class="bg-[#01022B]">
             <footer class=" container mx-auto text-white  py-10">
                 <div class="container mx-auto flex flex-col items-center md:flex-row justify-between px-4">
                     <div class="flex flex-col items-center md:items-start">
@@ -690,7 +697,7 @@
                     <p class="text-xs">All rights reserved &copy; ANGLE2 2023</p>
                 </div>
             </footer>
-        </div>
+        </div> -->
 
        
 
