@@ -11,11 +11,12 @@
 // });
 
 const menuToggle = document.getElementById('menu-toggle');
-const mobileMenu = menuToggle.nextElementSibling;
+const mobileMenu = document.getElementById('mobile-menu');
 
 menuToggle.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
+
 AOS.init();
 // Function to animate the counter
 function animateCounter(element, target, startValue = 0) {

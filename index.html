@@ -18,55 +18,49 @@
 
 <body>
 
-    <nav id="navbar"
-        class="z-[1000] bg-[#01022B] py-4 text-white fixed top-0 left-0 w-full h-auto flex items-center justify-between px-4 transition-colors duration-500">
+    <nav id="navbar" class="z-[1000] bg-[#01022B] py-4 text-white fixed top-0 left-0 w-full h-auto flex items-center justify-between px-4 transition-colors duration-500">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
             <a href="/">
                 <div class="flex items-center">
-                    <!-- <img src="/logo.svg" alt="Travella Logo" class="h-8 w-auto" /> -->
+                    <!-- Uncomment the line below to include a logo -->
+                    <!-- <img src="/logo.svg" alt="Edvantage Logo" class="h-8 w-auto" /> -->
                     <span class="font-bold text-xl ml-2">Edvantage</span>
                 </div>
             </a>
             <!-- Hamburger Icon for Mobile -->
             <button id="menu-toggle" class="block lg:hidden focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                    </path>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
-            <!-- Links for Desktop and Mobile -->
-            <nav class="lg:hidden absolute top-full left-0 w-full bg-[#01022B] p-5">
+            <!-- Links for Mobile -->
+            <nav class="lg:hidden absolute top-full left-0 w-full bg-[#01022B] p-5 hidden" id="mobile-menu">
                 <ul class="flex flex-col space-y-4 text-center">
-                  <li><a href="/about" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Home</a></li>
-                  <li><a href="/about" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Partnership</a></li>
-                  <li><a href="#Services" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Services</a></li>
-                  <li><a href="#Clients" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Clients</a></li>
-                  <li><a href="#founders" class="block text-center py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Founders</a></li>
-                  <li><a href="#Edvantagework" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Our Work</a></li>
+                    <li><a href="/" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Home</a></li>
+                    <li><a href="/partnership" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Partnership</a></li>
+                    <li><a href="#Services" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Services</a></li>
+                    <li><a href="#Clients" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Clients</a></li>
+                    <li><a href="#founders" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Founders</a></li>
+                    <li><a href="#Edvantagework" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Our Work</a></li>
                 </ul>
-              </nav>
-              
-              <nav class="hidden lg:block lg:flex lg:justify-end lg:w-full lg:p-5">
+            </nav>
+            <!-- Links for Desktop -->
+            <nav class="hidden lg:block lg:flex lg:justify-end lg:w-full ">
                 <ul class="lg:flex lg:space-x-8 lg:items-center">
-                  <li><a href="/about" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Home</a></li>
-                  <li><a href="/about" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Partnership</a></li>
-                  <li><a href="#Services" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Services</a></li>
-                  <li><a href="#Clients" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Clients</a></li>
-                  <li><a href="#founders" class="block text-center py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800  to-sky-400 transition duration-300">Founders</a></li>
-                  <li><a href="#Edvantagework" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Our Work</a></li>
+                    <li><a href="/" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Home</a></li>
+                    <li><a href="/partnership" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Partnership</a></li>
+                    <li><a href="#Services" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Services</a></li>
+                    <li><a href="#Clients" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Clients</a></li>
+                    <li><a href="#founders" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Founders</a></li>
+                    <li><a href="#Edvantagework" class="block py-2 rounded-full px-4 hover:bg-gradient-to-r from-blue-800 to-sky-400 transition duration-300">Our Work</a></li>
                 </ul>
-              </nav>
-            <!-- Call to Action -->
-            <a href="#AdvantagesForm" class="hidden lg:block">
-                <button
-                    class="w-[8rem] text-white text-base px-4 py-2 rounded-full bg-gradient-to-r from-blue-800 to-sky-400">
-                    Contact Us
-                </button>
-            </a>
+            </nav>
         </div>
     </nav>
+    
+   
+    
 
 
 
