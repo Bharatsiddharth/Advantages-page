@@ -10,6 +10,41 @@
 //   }
 // });
 
+const menuToggle = document.getElementById('menu-toggle');
+const menu = document.getElementById('menu');
+
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+
+
+AOS.init();
+// Function to animate the counter
+function animateCounter(element, target, startValue = 0) {
+  let current = startValue;
+  const interval = setInterval(() => {
+    current += 1;
+    element.textContent = current + (target > 10 ? '+' : ''); // Add '+' sign only for values greater than 10
+    if (current >= target) {
+      clearInterval(interval);
+    }
+  }, 150); // Adjust the speed of the animation by changing this value
+}
+
+// Create an IntersectionObserver instance
+const observer = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    animateCounter(document.getElementById('brochures-counter'), 50);
+    animateCounter(document.getElementById('posters-counter'), 65);
+    animateCounter(document.getElementById('videos-counter'), 10); // Start from 100
+    animateCounter(document.getElementById('partnership-counter'), 4); // Start from 100
+  }
+}, { threshold: 1.0 });
+
+// Observe the section element
+const section = document.querySelector('div[data-aos="fade-up"]'); // Select the parent div with data-aos="fade-up"
+observer.observe(section);
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
