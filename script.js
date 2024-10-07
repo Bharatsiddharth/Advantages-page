@@ -24,11 +24,11 @@ function animateCounter(element, target, startValue = 0) {
   let current = startValue;
   const interval = setInterval(() => {
     current += 1;
-    element.textContent = current + (target > 10 ? '+' : ''); // Add '+' sign only for values greater than 10
+    element.textContent = current + '+'; // Add '+' sign only for values greater than 10
     if (current >= target) {
       clearInterval(interval);
     }
-  }, 150); // Adjust the speed of the animation by changing this value
+  }, 120); // Adjust the speed of the animation by changing this value
 }
 
 // Create an IntersectionObserver instance
