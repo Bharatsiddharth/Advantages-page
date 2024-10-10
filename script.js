@@ -1,14 +1,14 @@
-// const navbar = document.getElementById('navbar');
+const navbar = document.getElementById('navbar');
 
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY >= window.innerHeight) {
-//     navbar.classList.add('bg-[#01022B]');
-//     navbar.classList.remove('transparent');
-//   } else {
-//     navbar.classList.add('transparent');
-//     navbar.classList.remove('bg-[#01022B]');
-//   }
-// });
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= window.innerHeight) {
+    navbar.classList.add('bg-[#01022B]');
+    navbar.classList.remove('transparent');
+  } else {
+    navbar.classList.add('transparent');
+    navbar.classList.remove('bg-[#01022B]');
+  }
+});
 
 const menuToggle = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
